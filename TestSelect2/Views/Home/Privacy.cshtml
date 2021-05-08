@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<h1>@ViewData["Title"]</h1>
+
+<div class="row" id="test">
+    <div class="col">
+        <select vldid="testselect2" v-model="myobj" title="Please select" v-on:update="sayhello('Hi')" v-select2>
+            <option value="1">項目一</option>
+            <option value="2">項目二</option>
+        </select>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/Reference/Select2Test.js"></script>
+}
+
