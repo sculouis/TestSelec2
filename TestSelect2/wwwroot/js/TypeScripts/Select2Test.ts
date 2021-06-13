@@ -1,4 +1,7 @@
 ﻿Vue.directive('select2', {
+    inserted(el,binding){
+        $(el).select2();
+    },
     bind(el, binding, vnode) {
         const event = new Event('change');
         const myevent = new Event('update');
@@ -37,10 +40,4 @@ var selectTest = new Vue({
             }
         }
     },
-     //mounted:function(){
-     //    $("select").select2();
-     //}
-
 });
-$("select").select2({});
-//# sourceMappingURL=Select2Test.js.map
