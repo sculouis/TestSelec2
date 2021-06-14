@@ -1,14 +1,14 @@
 ﻿Vue.directive('select2', {
-    inserted(el,binding){
-        $(el).select2();
+    inserted(el, binding) {
+            $(el).select2();
     },
     bind(el, binding, vnode) {
         const event = new Event('change');
-        const myevent = new Event('update');
+        const updateEvent = new Event('update');
         $(el).select2().on("select2:select", function (e) {
             //console.log(e.target.value);
             el.dispatchEvent(event);
-            el.dispatchEvent(myevent);
+            el.dispatchEvent(updateEvent);
         });
 
     }

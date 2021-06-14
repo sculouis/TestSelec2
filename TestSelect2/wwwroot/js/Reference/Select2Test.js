@@ -4,11 +4,11 @@ Vue.directive('select2', {
     },
     bind: function (el, binding, vnode) {
         var event = new Event('change');
-        var myevent = new Event('update');
+        var updateEvent = new Event('update');
         $(el).select2().on("select2:select", function (e) {
             //console.log(e.target.value);
             el.dispatchEvent(event);
-            el.dispatchEvent(myevent);
+            el.dispatchEvent(updateEvent);
         });
     }
 });

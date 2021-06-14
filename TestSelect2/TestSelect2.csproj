@@ -13,6 +13,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="wwwroot\js\TypeScripts\" />
+    <Folder Include="Utilites\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\lib\bootstrap\LICENSE" />
@@ -36,6 +37,9 @@
     <Content Remove="wwwroot\lib\bootstrap\dist\js\bootstrap.min.js" />
     <Content Remove="wwwroot\lib\bootstrap\dist\js\bootstrap.js.map" />
     <Content Remove="wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Utilites\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="wwwroot\lib\jquery\dist\jquery.d.ts" />
