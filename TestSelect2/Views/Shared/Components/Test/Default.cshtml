@@ -1,0 +1,16 @@
+﻿
+<div class="row" id="test">
+    @*<div class="col">
+            <select vldid="testselect2" v-model="myobj" v-on:update="sayhello('Hi')"
+                v-select2>
+                <option value="1">項目一</option>
+                <option value="2">項目二</option>
+            </select>
+        </div>*@
+    <div class="col">
+        <select2 vldid="someObj" enum-kind=@(EnumKind.kind1) model="myobj" update-function="sayhello('Hi')" allow-null=@true></select2>
+    </div>
+    <div class="col">
+        <email mail-to="test"></email>
+    </div>
+</div>
